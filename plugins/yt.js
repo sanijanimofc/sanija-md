@@ -187,7 +187,7 @@ cmd(
       ytdata = searchResults[0];
 
       let desc = `
-AUDIO DOWNLOADER 🎵
+SANIJA-MD AUDIO DOWNLOADER 🎵
 
 📌 Title: ${ytdata.title}
 🎤 Channel: ${ytdata.author.name}
@@ -200,6 +200,8 @@ AUDIO DOWNLOADER 🎵
 1. Audio Format 🎶
 2. Document Format 📁
 3. Voice Note Format 🎙
+
+POWERED BY SANIJA-MD
 `;
 
       const vv = await frozen.sendMessage(
