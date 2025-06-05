@@ -2,7 +2,7 @@ const { cmd } = require('../command');
 const config = require('../config');
 
 cmd({
-    pattern: "button",
+    pattern: "alive",
     desc: "Bot's Online or No.",
     react: "👋",
     category: "main",
