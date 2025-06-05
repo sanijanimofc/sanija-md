@@ -168,8 +168,8 @@ async function searchYouTube(query, maxResults = 1) {
 // Plugin Registration
 cmd(
   {
-    pattern: "video4",
-    alias: ["ytvideo4", "mp4", "ytmp4"],
+    pattern: "video",
+    alias: ["video4", "mp4", "ytmp4"],
     react: "🎬",
     desc: "Download enchanted videos from YouTube",
     category: "ice kingdom",
