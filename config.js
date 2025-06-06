@@ -11,7 +11,7 @@
  AUTO_VOICE: process.env.AUTO_VOICE || "true",
  AUTO_STICKER: process.env.AUTO_STICKER || "false",
  AUTO_REPLY: process.env.AUTO_REPLY || "false",
- ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/b61wmw.png",
+ ALIVE_IMG: process.env.ALIVE_IMG || "https://files.catbox.moe/v02why.jpg",
  MENU_IMG: process.env.MENU_IMG || "https://files.catbox.moe/uhn8p1.png",
  ALIVE_MSG: process.env.ALIVE_MSG || "_Hi 💁🏽 How Can I Assist You. I Am alive Now. Thank You For Installing Me To Your Whatsapp",
  ANTI_LINK: process.env.ANTI_LINK || "true",
@@ -26,6 +26,6 @@
  OWNER_REACT: process.env.OWNER_REACT || "false",
  BOT_NAME: process.env.BOT_NAME || "『 SANIJA-MD_V1 』",
  OMDB_API_KEY: process.env.OMDB_API_KEY || "76cb7f39",// omdbapi.com
- START_IMG: process.env.START_IMG || "https://files.catbox.moe/d2d02k.png",
+ START_IMG: process.env.START_IMG || "https://files.catbox.moe/v02why.jpg",
  BUTTON: process.env.BUTTON || "true"
  };
