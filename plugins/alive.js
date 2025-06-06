@@ -13,10 +13,10 @@ async (conn, mek, m, { from, reply }) => {
         const aliveMessage = `
 ╭───〔 *SANIJA MD ALIVE* 〕───◆
 │ 👑 *Bot Status:* Online & Ready
-│ ⚙️ *Version:* 2.5.1
+│ ⚙️ *Version:* 1.0.3
 │ 💬 *Prefix:* ${config.PREFIX || '.'}
-│ 👤 *Owner:* Sanija
-│ 🌐 *Framework:* Baileys-MD
+│ 👤 *Owner:* Sanija NIMTHARU
+│ 🌐 *Framework:* SANIJA-MD
 │ 🔒 *Security:* Encrypted & Safe
 │ 🧠 *AI Mode:* ${config.AI_MODE ? 'Enabled' : 'Disabled'}
 │ 📦 *Commands:* Utility | Downloaders | Fun | Admin Tools
