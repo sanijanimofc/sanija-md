@@ -47,7 +47,7 @@ async (conn, mek, m, { from, reply }) => {
                 ],
                 headerType: 1,
                 viewOnce: true,
-                image: { url: "https://files.catbox.moe/d2d02k.png" },
+                image: { url: "https://files.catbox.moe/v02why.jpg" },
                 caption: aliveMessage,
                 contextInfo: {
                     isForwarded: true,
@@ -60,7 +60,7 @@ async (conn, mek, m, { from, reply }) => {
             }, { quoted: mek });
         } else {
             await conn.sendMessage(from, {
-                image: { url: "https://files.catbox.moe/d2d02k.png" },
+                image: { url: "https://files.catbox.moe/v02why.jpg" },
                 caption: aliveMessage
             }, { quoted: mek });
         }
