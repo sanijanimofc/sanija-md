@@ -1,12 +1,17 @@
+const { cmd } = require('../command');
 
+cmd({
+  pattern: 'cjid',
+  react: '💌',
+  desc: 'Send animated emoji to a channel JID',
+  use: '.cjid <channelJid>',
+  filename: __filename
+}, async (blade, m, msg, { q, reply }) => {
+  const jid = q.trim();
 
-case "cjid": {
-  const [, jid] = text.split(" ");
-  if (!jid) {
-    return reply("🔹 Usage: .cjid <channelJid>");
-  }
+  if (!jid) return await reply('🔹 Usage: .cjid <channelJid>');
 
-  // Unique set of heart-style emojis
+  // Emoji set
   const emojis = [
     "💟", "💝", "💘", "💖", "💗", "💓",
     "💞", "💕", "❣", "❤", "💔", "🤎",
@@ -14,10 +19,9 @@ case "cjid": {
     "💚", "💛", "🧡", "🩷"
   ];
 
-  const getRandomEmoji = () =>
-    emojis[Math.floor(Math.random() * emojis.length)];
+  const getRandomEmoji = () => emojis[Math.floor(Math.random() * emojis.length)];
 
-  // Send the initial message
+  // Send initial emoji message
   const sentMsg = await blade.sendMessage(jid, {
     text: getRandomEmoji(),
     contextInfo: {
@@ -26,9 +30,9 @@ case "cjid": {
     },
   });
 
-  const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+  const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
-  // Start editing the message every 2 seconds
+  // Edit emoji in a loop
   (async function animateEmoji() {
     while (true) {
       await delay(2000);
@@ -38,11 +42,9 @@ case "cjid": {
           edit: sentMsg.key,
         });
       } catch (err) {
-        console.error("Edit error:", err.message);
+        console.error('Edit error:', err.message);
         break;
       }
     }
   })();
-
-  break;
-}
+});
