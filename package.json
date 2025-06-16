@@ -9,7 +9,7 @@
     "restart": "pm2 restart SANIJA-MD"
   },
   "dependencies": {
-    "@whiskeysockets/baileys": "npm:sadiya-tech-baileys@latest",
+    "@whiskeysockets/baileys": "github:AxellNetwork/Baileys",
     "baileys": "github:nstar-y/bail",
     "@adiwajshing/keyed-db": "^0.2.4",
     "@dark-yasiya/yt-dl.js": "1.0.5",
