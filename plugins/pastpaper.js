@@ -1,4 +1,11 @@
+/*
+React one. 🥹🫀
+Thenux-AI
 
+Button pastpaerdl cmd.
+*/
+
+// Credit nathuva share keranna ba.....
 
 const { cmd } = require('../command');
 const axios = require('axios');
@@ -20,7 +27,7 @@ cmd({
         const query = args.join(" ");
         if (!query) {
             await conn.sendMessage(from, { react: { text: "❌", key: mek.key } });
-            return reply('Type a past paper name, grade or subject to search!\nEx: `.pastpp grade 10 science`');
+            return reply('Type a past paper name, grade or subject to search!\nEx: `.pastpp grade 11 science`');
         }
 
         await conn.sendMessage(from, { react: { text: "🔍", key: mek.key } });
@@ -36,22 +43,22 @@ cmd({
 
         const results = data.results;
         let sendObj = {
-            image: { url: results[0].thumbnail || "https://files.catbox.moe/v02why.jpg" },
-            footer: "SANIJA MD | Past Paper Search",
+            image: { url: results[0].thumbnail || "https://i.ibb.co/21LhR9JS/20250615-1502-Solo-Leveling-Characters-remix-01jxsetpm9effavxjvyn37tn26.png" },
+            footer: "© Thenux-AI | Past Paper Search",
             headerType: 4,
             contextInfo: {
                 forwardingScore: 999,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterName: "SANIJA MD UPDATES",
-                    newsletterJid: "120363296974282444@newsletter",
+                    newsletterName: "👾 THENUX  |   AI ジ",
+                    newsletterJid: "1203633129628631506@newsletter",
                 },
                 externalAdReply: {
-                    title: "SANIJA MD",
-                    body: "Powered by Sanija Nimtharu",
-                    thumbnailUrl: 'https://files.catbox.moe/v02why.jpg',
+                    title: "Thenux-AI| Auto AI",
+                    body: "Powered by Thenux-AI | darkhackersl",
+                    thumbnailUrl: 'https://i.ibb.co/21LhR9JS/20250615-1502-Solo-Leveling-Characters-remix-01jxsetpm9effavxjvyn37tn26.png',
                     mediaType: 1,
-                    sourceUrl: 'https://github.com/sanijanimofc',
+                    sourceUrl: 'https://github.com/darkhackersl',
                     renderLargerThumbnail: true
                 }
             }
@@ -64,7 +71,7 @@ cmd({
             description: item.description ? (item.description.length > 45 ? item.description.substring(0, 45) + "..." : item.description) : ""
         }));
 
-        sendObj.text = "*📄 Past Paper Search Results*\n━━━━━━━━━━━━━━━━━━\nSelect a paper to download:\n━━━━━━━━━━━━━━━━━━\n_Powered by SANIJA MD";
+        sendObj.text = "*📄 Past Paper Search Results*\n━━━━━━━━━━━━━━━━━━\nSelect a paper to download:\n━━━━━━━━━━━━━━━━━━\n_Powered by @Thenux-ai_";
         sendObj.sections = [
             {
                 title: "Search Results",
@@ -127,7 +134,7 @@ if (!global.__pastppListHandler) {
                         document: { url: dl.download_info.download_url },
                         mimetype: 'application/pdf',
                         fileName: dl.download_info.file_name || 'pastpaper.pdf',
-                        caption: `*📄 ${dl.download_info.file_title || info.title}*\n\nSource: ${info.url}\n_Powered by SANIJA MD`
+                        caption: `*📄 ${dl.download_info.file_title || info.title}*\n\nSource: ${info.url}\n_Powered by Thenux-ai_`
                     }, { quoted: msg });
 
                     await pastppConnRef.sendMessage(msg.key.remoteJid, { react: { text: "✅", key: msg.key } });
