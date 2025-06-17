@@ -28,7 +28,7 @@
     "ffmpeg": "^0.0.4",
     "file-type": "^16.5.3",
     "fluent-ffmpeg": "^2.1.2",
-    "form-data": "^4.0.0",
+    "form-data": "^4.0.3",
     "google-tts-api": "^2.0.2",
     "path": "^0.12.7",
     "node-fetch": "^2.6.1",
