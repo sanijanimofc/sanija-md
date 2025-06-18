@@ -1,4 +1,4 @@
-const { cmd, commands } = require('../lib/command');
+const { cmd, commands } = require('../command');
 const config = require('../config');
 const { ytsearch } = require('@dark-yasiya/yt-dl.js');
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
