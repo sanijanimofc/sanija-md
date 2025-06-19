@@ -1,11 +1,4 @@
-/*
-React one. 🥹🫀
-Thenux-AI
 
-Button pastpaerdl cmd.
-*/
-
-// Credit nathuva share keranna ba.....
 
 const { cmd } = require('../command');
 const axios = require('axios');
